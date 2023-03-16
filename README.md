@@ -38,46 +38,36 @@ Hello! Here you will see the Leaderboard Project
   </ul>
 </details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.microverse.org/"></a>Microverse</li>
-  </ul>
-</details>
-
 ## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-
-- install git, install VSCode
+```
+Git
+VS Code
+Node
+```
 
 ### Setup
-
-- Clone this repository to your desired folder:
-
-``sh
-  cd my-folder
-  git clone https://github.com/everinurmind/leaderboard-n``
-  
-  ### Install
-
-- ``npm install``
-
-
+```
+cd my-folder
+git clone git@github.com:everinurmind/leaderboard-n.git
+cd leaderboard-n
+```
+### Install
+```
+npm install
+```
 ### Usage
-
-- open with live server extention on VSCode
-
-
+```
+npm run build
+npm start
+```
 ### Run tests
-
-- Run: ``npm start``
-
-### Deployment
-
-- the project has not been deployed yet
+```
+npm test
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
