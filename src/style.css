@@ -1,76 +1,84 @@
-* {
-  font-family: 'Courier New', Courier, monospace;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  background-color: #f5f5f5;
+}
+
+h1 {
+  color: #2e86c1;
+}
+
+h2 {
+  color: #2ecc71;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 32px 160px;
-}
-
-h1 {
-  font-size: 48px;
 }
 
 .container {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 80px;
+  flex-wrap: wrap;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 #board,
 #form {
-  margin-top: 32px;
-  padding: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.btn {
-  padding: 4px 8px;
-  background-color: transparent;
-  box-shadow: 2px 2px 2px 1px #353535;
-  cursor: pointer;
-}
-
-#recent {
-  display: flex;
-  align-items: center;
-  gap: 48px;
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  margin-right: 2%;
+  flex: 1 1 48%;
 }
 
 .scores {
   list-style: none;
-  border: 2px solid #000;
+  padding: 0;
+  margin: 0;
 }
 
-.scores > li {
-  padding: 4px 8px;
+.scores li {
+  background-color: #eaecee;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 
-.scores > li:nth-child(even) {
-  background-color: #c6c6c6;
+.refresh,
+.submit {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 32px;
+.refresh:hover,
+.submit:hover {
+  background-color: #27ae60;
 }
 
-input {
-  padding: 4px;
-  border: 2px solid #000;
+.refresh:active,
+.submit:active {
+  background-color: #229954;
 }
 
-::placeholder {
-  color: #000;
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 0 0 2px #2ecc71;
 }
