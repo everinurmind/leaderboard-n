@@ -8,8 +8,8 @@ const scoresList = document.querySelector('.scores');
 
 // Refresh the scores list
 const refreshScores = async () => {
-  const scores = await getScores(gameId);
   scoresList.innerHTML = '';
+  const scores = await getScores(gameId);
   scores.forEach((score) => {
     const li = document.createElement('li');
     li.textContent = `${score.user}: ${score.score}`;
